@@ -1,0 +1,44 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+body{
+    background:black;
+}
+
+.main-container{
+    width:80vw;
+    display:flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin:auto;
+    background:pink;
+    height: 100vh;;
+    flex-direction: column;
+}
+
+h1{
+    font-size: 3rem;
+    font-weight: 100;
+}
+
+.start-link{
+    background:lightblue;
+    border:dodgerblue 3px solid;
+    padding:4vh 10vw;
+    text-decoration: none;
+    color:black;
+    font-weight: 100;
+    font-size: 3rem;
+    margin-bottom: 5vh;
+}
+
+.green{
+    background:green;
+}
+
+.red{
+    background:red;
+}
