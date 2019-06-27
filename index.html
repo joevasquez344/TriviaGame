@@ -1,16 +1,74 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
-    <link rel="stylesheet" href="./assets/css/home.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    <link rel="stylesheet" href="./assets/css/style.css">
 </head>
+
 <body>
-    <div class="main-container">
-        <h1>Total Trivial Trivia</h1>
-        <a href="./main.html" class="start-link">Start</a>
+    <div class="main-start-container">
+        <div class="start-content-wrapper">
+            <h1>Total Trivial Trivia!</h1>
+            <div class="start-link">Start</div>
+        </div>
+
     </div>
+    <div class="main-container">
+        <h1 class="header">Totally Trivial Trivia!</h1>
+
+        <div class="time-remaining-wrapper">
+            <div>Time Remaining:</div>
+            <div class="time-remaining" id="timeRemaining"></div>
+            <div>Seconds</div>
+        </div>
+        <div class="q-and-a-wrapper">
+            <h3>Leonardo Decaprio starred in The Great Gatsby.</h3>
+            <div class="btn-wrapper">
+                <button value="0" class="true-btn" id="trueBtn1">True</button>
+                <button value="1" class="false-btn" id="falseBtn1">False</button>
+            </div>
+        </div>
+        <div class="q-and-a-wrapper">
+            <h3>Abraham Lincoln was the 19th President of the United States.</h3>
+            <div class="btn-wrapper">
+                <button value="0" class="true-btn" id="trueBtn2">True</button>
+                <button value="1" class="false-btn" id="falseBtn2">False</button>
+            </div>
+        </div>
+        <div class="q-and-a-wrapper">
+            <h3>We actually do not know what sounds dinosaurs make.</h3>
+            <div class="btn-wrapper">
+                <button value="0" class="true-btn" id="trueBtn3">True</button>
+                <button value="1" class="false-btn" id="falseBtn3">False</button>
+            </div>
+        </div>
+
+
+        <div class="done-link" id="doneLink">Done</div>
+
+
+
+    </div>
+    <div class="main-result-container">
+        <div class="result-content-wrapper">
+            <h1>Total Trivial Trivia!</h1>
+            <h3>All Done!</h3>
+            <div class="result-wrapper">
+                <span>Correct Answers:</span><span class="correct-answers" id="correctAnswers"></span>
+                <span>Incorrect Answers:</span><span class="incorrect-answers" id="incorrectAnswers"></span>
+                <span>Unanswered:</span><span class="unanswered-questions" id="unansweredQuestions"></span>
+
+            </div>
+        </div>
+    </div>
+
+
+    <script src="./assets/javascript/app.js"></script>
 </body>
+
 </html>
